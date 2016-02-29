@@ -38,7 +38,8 @@
     <body>
         <div class="container">
             <div class="content">
-                <div class="title">Laravel 5</div>
+                <div class="title">In progress</div>
+                <img src="mantenimiento.png" alt="maintenance" style="width:304px;height:228px;">
             </div>
         </div>
     </body>

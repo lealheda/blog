@@ -22,4 +22,9 @@ class Article extends Model
     	return $this->hasMany('App\Image');
     }
 
+    public function tags(){
+        return $this->belongsToMany('App\Tag')->withTimestamps();
+
+    }
+
 }
