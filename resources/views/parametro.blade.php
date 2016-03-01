@@ -7,12 +7,15 @@
 
         <link rel="stylesheet" type="text/css" href="/css/estilos.css" media="screen" />
         
+        </style>
     </head>
     <body>
         <div class="container">
             <div class="content">
-                <div class="title">In progress</div>
-                <a href="/app/public/valor_parametro"><img src="/images/mantenimiento.png" alt="maintenance" style="width:304px;height:228px;"></a>
+                <div class="title">LEAL HEDA</div>
+                <img src="/images/mantenimiento.png" alt="maintenance" style="width:304px;height:228px;"></br>
+                <?php echo $child ?>
+                <span class="fuente"><?php echo $variable ?></span>
             </div>
         </div>
     </body>

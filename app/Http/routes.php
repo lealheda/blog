@@ -15,6 +15,13 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/app/public/{algo}', function ($algo) {
+    //return view('parametro')->with('variable', $algo);
+    $view = View::make('parametro')->with('variable',$algo)->nest('child', 'subview');
+    return $view;
+});
+
+
 /*
 |--------------------------------------------------------------------------
 | Application Routes
