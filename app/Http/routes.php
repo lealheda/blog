@@ -11,8 +11,17 @@
 |
 */
 
+/*
+	Tipos de rutas:
+	GET, POST, PUT, DELETE, RESOURCE	
+*/
+
 Route::get('/', function () {
     return view('welcome');
+});
+
+Route::get('articles', function () {
+    echo "Esta es la seccion de articulos";
 });
 
 Route::get('/app/public/{algo}', function ($algo) {

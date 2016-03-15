@@ -15,7 +15,9 @@
                 <div class="title">LEAL HEDA</div>
                 <img src="/images/mantenimiento.png" alt="maintenance" style="width:304px;height:228px;"></br>
                 <?php echo $child ?>
+
                 <span class="fuente"><?php echo $variable ?></span>
+                {{$child}}
             </div>
         </div>
     </body>
