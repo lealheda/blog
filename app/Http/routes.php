@@ -20,16 +20,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('articles', function () {
-    echo "Esta es la seccion de articulos";
-});
 
-Route::get('/app/public/{algo}', function ($algo) {
-    //return view('parametro')->with('variable', $algo);
-    $view = View::make('parametro')->with('variable',$algo)->nest('child', 'subview');
-    return $view;
+Route::group(['prefix' => 'admin'], function(){
+    Route::resource('users','UsersController');
 });
-
 
 /*
 |--------------------------------------------------------------------------
